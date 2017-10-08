@@ -125,14 +125,14 @@ body {
 
 .firefox-yt {
 	position: fixed;
-	top: 320px;
+	top: 220px;
 	right: 140px;
 	opacity: 0.7;
 }
 
 .github-yt {
 	position: fixed;
-	top: 220px;
+	top: 320px;
 	right: 140px;
 	opacity: 0.7;
 }
