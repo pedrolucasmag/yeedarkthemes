@@ -1,0 +1,15 @@
+/* hide bits ad content */
+#ad_container #flashContent, #ad_container #truex_content > *, #ad_stage {
+  visibility: hidden !important;
+}
+#ad_container:before {
+  content: "CLICK" !important;
+  color: red !important;
+  font-weight: 900 !important;
+  position: relative !important;
+  top: 50% !important;
+  left: 50% !important;
+}
+body {
+  background: #000 !important;
+}

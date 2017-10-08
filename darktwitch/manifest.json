@@ -1,0 +1,44 @@
+{
+	"manifest_version": 2,
+    "name": "Dark TwitchTV Theme",
+    "short_name": "dark-twitch",
+    "description": "A Dark Theme for TwitchTV",
+    "version": "0.7.3",
+    "author":  "Pedro Lucas Oliveira",
+	"applications": {
+    "gecko": {
+      "id": "jid1-mAg71D89FNiohQ@jetpack",
+        "strict_min_version": "43.0"
+		}
+	},
+"content_scripts": [
+		{
+            "matches": ["*://www.twitch.tv/*",
+						"*://*.passport.twitch.tv/*",
+						"*://*.player.twitch.tv/*",
+						"*://*.clips.twitch.tv/*"
+			],
+            "css": ["darktwitch.css"],
+            "run_at": "document_start",
+			"all_frames" : true
+        },
+		{
+			"matches": ["*://*.go.twitch.tv/*"],
+			"css":["beta.css"],
+			"run_at": "document_start",
+			"all_frames": true
+		},
+		{
+			"matches": ["*://googleapis.com/*"],
+			"css":["videoad.css"],
+			"run_at": "document_start",
+			"all_frames": true
+		},
+		{
+			"matches": ["*://truex.com/*"],
+			"css":["bits.css"],
+			"run_at": "document_start",
+			"all_frames": true
+		}
+]
+}
