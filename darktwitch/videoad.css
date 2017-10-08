@@ -1,4 +1,0 @@
-/* disable video ad click */
-.videoAdUi * {
-  pointer-events: none !important;
-}
