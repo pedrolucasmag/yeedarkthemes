@@ -34,20 +34,19 @@ body {
 	top: 30%;
 }
 
-#yt {
-	background-color: #5b5b5b;
-	height: 50%;
-	width: 50%;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	margin-right: 25%;
-	margin-left: 25%;
-	background-image: url("https://i.imgur.com/i387xEo.png");
-	background-size: 680px 340px;
-	background-repeat: no-repeat;
-	border: 1px solid #5b5b5b;
-	opacity: 0.7;
+
+#main {
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
+
+.lefth {
+	position: relative;
+	height: 0%;
+	width: 0%;
+}
+
 
 .twitch-text, .yt-text, .gnews-text {
 	text-align: center;
@@ -68,6 +67,21 @@ body {
 .yt-text {
 	position: relative;
 	top: 580px;
+}
+
+#yt {
+	background-color: #5b5b5b;
+	height: 50%;
+	width: 50%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-right: 25%;
+	margin-left: 25%;
+	background-image: url("https://i.imgur.com/i387xEo.png");
+	background-size: 680px 340px;
+	background-repeat: no-repeat;
+	border: 1px solid #5b5b5b;
+	opacity: 0.7;
 }
 
 #twitch {
