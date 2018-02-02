@@ -13,6 +13,7 @@
 html:not([style-scope]):not(.style-scope):not([color-exp]) *, html[color-exp]:not([style-scope]):not(.style-scope) {
     --yt-primary-color: var(--purple);
     --yt-primary-text-color: var(--textcolor);
+    --ytd-comment-text-color: var(--purple);
     --yt-hovered-text-color: var(--purple);
     --yt-secondary-text-color: var(--textcolor);
     --yt-disabled-text-color: hsla(0, 0%, 6.7%, 0.3);
@@ -170,8 +171,17 @@ ytd-searchbox[mode=legacy] #container.ytd-searchbox {
 #progress.yt-page-navigation-progress {
     background-color: var(--purple);
 }
-#search-icon-legacy.ytd-searchbox {
-    border: none;
+
+ytd-button-renderer #button.ytd-button-renderer:hover {
+    color: var(--purple)!important;
+}
+
+ytd-button-renderer.style-compact-gray[is-paper-button] {
+    background-color: var(--lightgrey)!important;
+}
+
+ytd-button-renderer.style-compact-gray[is-paper-button]:hover {
+    color: var(--purple)!important;
 }
 /**** ---END NEW LAYOUT--- *****/
 h3 {
@@ -1998,4 +2008,67 @@ body.darkmode #alientube .at_tab.active a {
 
 #page-manager.ytd-app {
     background-color: var(--greybg)!important;
+}
+
+body:not([dark]) #search {
+    color: var(--textcolor) !important;
+}
+
+#content-text.ytd-comment-renderer {
+    color: var(--textcolor) !important;
+}
+
+ytd-searchbox[mode=legacy] #container.ytd-searchbox {
+    background-color: var(--greybg)!important;
+    border: none;
+}
+
+yt-icon.ytd-badge-supported-renderer {
+    color: var(--purple)!important;
+}
+
+#search-icon-legacy.ytd-searchbox {
+    background-color: var(--greybg)!important;
+    border-color: var(--lightgrey)!important;
+    border:none!important;
+    border-left: none!important;
+}
+
+#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
+    color: var(--textcolor);
+}
+
+ytd-searchbox[mode=legacy] #container.ytd-searchbox {
+    box-shadow: none;
+}
+
+ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]) {
+    background-color: var(--lightgrey)!important;
+}
+
+.date.ytd-video-secondary-info-renderer {
+    color: var(--textcolor);
+}
+
+ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
+    border: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+body:not([yt-color]):not([dark]) #search {
+    color: var(--textcolor) !important;
+}
+
+ytd-searchbox[mode=material-left] #container.ytd-searchbox, ytd-searchbox[mode=material-centered] #container.ytd-searchbox {
+    background-color: var(--greybg) !important;
+    box-shadow:none!important;
+}
+
+#search-icon.ytd-searchbox {
+    color: var(--textcolor) !important;
+}
+
+.style-scope.ytd-toggle-button-renderer.style-default-active {
+    color: var(--purple) !important;
 }

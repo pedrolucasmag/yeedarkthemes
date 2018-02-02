@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Youtube Dark Purple",
   "description": "Makes the layout of Youtube dark purple while retaining the original feel.",
-  "version": "0.7.29",
+  "version": "0.8.5",
   "author": "Pedro Lucas Oliveira",
   "applications": {
     "gecko": {
