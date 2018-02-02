@@ -298,3 +298,28 @@ a {
     border-color: var(--greybg)!important;
 	background-color: var(--greybg)!important;
 }
+
+.passport-modal {
+    background-color: var(--greybg)!important;
+    min-width: 42rem;
+    min-height: 42rem;
+}
+
+.directory-tabs {
+    background-color: var(--midgrey)!important;
+    border-color: var(--bordercolor)!important;
+}
+
+.directory-tabs__item:before {
+    background: var(--bordercolor)!important;
+}
+
+.event {
+    background-color: var(--midgrey)!important;
+    border-color: var(--bordercolor)!important;
+}
+
+.event__broadcast {
+    border-left: 1px solid #a68ed2;
+    position: relative;
+}

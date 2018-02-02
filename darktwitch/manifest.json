@@ -3,7 +3,7 @@
     "name": "Dark TwitchTV Theme",
     "short_name": "dark-twitch",
     "description": "A Dark Theme for TwitchTV",
-    "version": "0.7.3",
+    "version": "0.7.10",
     "author":  "Pedro Lucas Oliveira",
 	"applications": {
     "gecko": {
